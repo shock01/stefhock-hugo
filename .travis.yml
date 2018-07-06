@@ -8,6 +8,6 @@ script:
 
 deploy:
   provider: script
-  script: bash deploy shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
+  script: bash build shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
   on:
     branch: master
