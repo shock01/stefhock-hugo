@@ -9,7 +9,7 @@ RUN cd src && \
     npm run build:production
 
 # build hugo container
-FROM alpine
+FROM alpine:3.7
 
 ENV HUGO_VERSION 0.42.2
 ENV HUGO_BINARY hugo
