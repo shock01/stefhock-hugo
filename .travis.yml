@@ -6,8 +6,8 @@ services:
 script:
   - echo "building"
 
-# deploy:
-#   provider: script
-#   script: bash build shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
-#   on:
-#     branch: master
+deploy:
+  provider: script
+  script: bash build shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
+  on:
+    branch: master
