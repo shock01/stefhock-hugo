@@ -1,0 +1,5 @@
+<style>
+        {{ $cssFile := relURL (printf "%s%s" "static/dist/" .Site.Data.webpack_assets.app.css ) }}
+        {{ readFile $cssFile | safeCSS }}
+</style>
+ 

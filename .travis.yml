@@ -1,0 +1,13 @@
+sudo: required
+
+services:
+    docker
+    
+script:
+  - echo "building"
+
+deploy:
+  provider: script
+  script: bash deploy shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
+  on:
+    branch: master
