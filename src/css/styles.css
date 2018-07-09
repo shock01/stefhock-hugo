@@ -24,7 +24,9 @@ body {
   margin: 0;
   padding: 0;
   /**background: linear-gradient(var(--lime), var(--mint));*/
-  font: 16px/1.2 -apple-system, BlinkMacSystemFont, “Segoe UI”, Roboto, Helvetica, Arial, sans-serif;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
 }
 
 /**
