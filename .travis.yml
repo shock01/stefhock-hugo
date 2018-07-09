@@ -11,3 +11,6 @@ deploy:
   script: bash build shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
   on:
     branch: master
+ 
+after_deploy:
+    - ./trigger-travis.sh shock01 stefhock.nl $TRAVIS_ACCESS_TOKEN "trigger for update theme"    
