@@ -14,4 +14,5 @@ deploy:
     branch: master
  
 after_deploy:
+    - chmod +x trigger_travis.sh
     - ./trigger_travis.sh shock01 stefhock.nl $TRAVIS_ACCESS_TOKEN "trigger for update theme"    
