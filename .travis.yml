@@ -9,6 +9,7 @@ script:
 deploy:
   provider: script
   script: bash build shock01/stefhock-hugo $DOCKER_USERNAME $DOCKER_PASSWORD
+  skip-cleanup: true
   on:
     branch: master
  

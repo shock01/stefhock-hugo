@@ -1,3 +1,18 @@
 {{ define "main" -}}
-  coming soon again 
+  <main>
+    <header>
+      <h1>{{ .Title }}</h1>
+      <h2>{{ .Params.description }}</h2>
+    </header>
+    {{ .Content }}
+    <section>
+      {{ if .Data.Pages -}}
+      {{ range first 10 .Data.Pages -}}
+
+      {{- end }}
+      {{- else }}
+      no pages yet
+      {{- end}}
+    </section>
+  </main>
 {{- end }}
